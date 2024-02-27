@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(255, 251, 237, 0.418);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+  margin: 20px;
+}
+h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: darkgray;
+  align-self: flex-start;
+}
+.recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+.recipe {
+  width: calc((100% - 80px) / 3);
+  flex-grow: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(179, 174, 174);
+}
+.recipe div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(179, 174, 174);
+}
+a {
+  padding: 10px 40px;
+  text-align: center;
+  background-color: rgb(255, 187, 0);
+  text-transform: uppercase;
+  /* li-style-type: none; */
+  border: 1px solid rgb(179, 174, 174);
+  border-radius: 4px;
+  align-self: flex-start;
+  color: black;
+  font-weight: bolder;
+}
+.details {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.details .titleInfo {
+  width: calc((100% - 20px) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+h1 {
+  color: rgb(146, 143, 143);
+  text-transform: uppercase;
+}
+.details img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  border: 3px solid gainsboro;
+}
+.details .ingredients {
+  width: calc((100% - 20px) / 2);
+  flex-grow: 1;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+h2 {
+  color: rgb(65, 50, 50);
+}
+ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  list-style-type: circle;
+  color: rgb(65, 50, 50);
+  width: 100%;
+  font-weight: bold;
+  border-bottom: 4px solid gainsboro;
+  padding-bottom: 30px;
+}
